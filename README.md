@@ -14,6 +14,14 @@ Kullanıcıdan alınan transformatör verileriyle temel elektromanyetik hesaplam
 - Doygunluk etkisini `B-H` eğrileri üzerinden modellemeye çalışır  
 - Kullanıcı dostu arayüz: Streamlit ile interaktif kullanım
 
+## Doygunluk Modellemesi
+
+Projede, malzemelerin `B-H` eğrileri tanımlanmıştır. Bu eğriler üzerinden `μᵣ` değeri dinamik olarak hesaplanır ve doygunluk bölgesine girildikçe `μᵣ` düşer. Bu düşüş, relüktansı artırır ve verime yansır.
+
+> **Not:** Doygunluk etkisi teorik olarak modellenmiş olsa da, `B-H` eğrilerindeki geçişin yumuşaklığı nedeniyle grafikte *gözle görülür dramatik bir kırılma* elde edilememiştir.
+Gelecekte daha agresif eğrilerle veya deneysel ölçümlerle model güçlendirilebilir.
+
+
 
 ![Arayüz Görseli](https://github.com/KRMALC/Transformator-Tasarim--Simulasyonu/blob/fd045cc43536d7b97753ca36e514282e800723d3/1.png)
 ![Arayüz Görseli](https://github.com/KRMALC/Transformator-Tasarim--Simulasyonu/blob/fd045cc43536d7b97753ca36e514282e800723d3/2.png)
